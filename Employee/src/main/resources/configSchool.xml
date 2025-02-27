@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.w3.org/2001/XMLSchema"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.BeanLife.School" name="school" init-method="init" destroy-method="destroy" >
+    <property name="name" value="IPS"/>
+    <property name="address"  value="Noida"/>
+
+</bean>
+    <bean class="com.BeanLife.University" name="university" >
+        <property name="name" value="Delhi University "/>
+
+    </bean>
+<bean class="com.BeanLife.Institute" name="institute">
+    <property name="name" value="Akash Institute"/>
+
+</bean>
+</beans>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="employee1" class="com.EmployeeCollection.Employee">
+    <property name="id" value="2154"/>
+    <property name="name" value="Ashwani"/>
+    <property name="skills" >
+       <list>
+           <value>Java</value>
+           <value>HTML</value>
+           <value>CSS</value>
+           <value>ReactJs</value>
+       </list>
+
+    </property>
+    <property name="mobile">
+        <set>
+            <value>6307262902</value>
+            <value>6392986560</value>
+            <value>9839016359</value>
+        </set>
+    </property>
+    <property name="address">
+       <map>
+           <entry key="45" value="Noida"/>
+           <entry key="34" value="Delhi"/>
+       </map>
+    </property>
+
+
+</bean>
+
+
+</beans>

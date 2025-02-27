@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="student" class="com.StudentCollection.StudentDetails">
+    <constructor-arg  value="2356"/>
+    <constructor-arg  value="Ankiet"/>
+    <constructor-arg >
+        <list>
+            <value>Java</value>
+            <value>Oops</value>
+            <value>PPL</value>
+        </list>
+    </constructor-arg>
+    <constructor-arg>
+        <set>
+            <value>HTML</value>
+            <value>CSS</value>
+            <value>JavaScript</value>
+            <value>ReactJs</value>
+        </set>
+    </constructor-arg>
+    <constructor-arg>
+        <map>
+            <entry key="24" value="Noida"/>
+            <entry key="58" value="Gurugram"/>
+        </map>
+    </constructor-arg>
+
+
+</bean>
+
+</beans>

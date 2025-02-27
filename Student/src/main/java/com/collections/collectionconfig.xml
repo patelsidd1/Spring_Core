@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean name="emp1" class="com.collection.Emp1">
+    <property name="name" value="Radhe"/>
+    <property name="phones">
+        <list>
+            <value>6392986560</value>
+            <value>9839428133</value>
+            <value>6362564232</value>
+        </list>
+    </property>
+    <property name="address" >
+        <set>
+            <value>Lucknow</value>
+            <value>Gorakhpur</value>
+            <value>Delhi</value>
+        </set>
+    </property>
+    <property name="cources">
+        <map>
+            <entry key= "java" value ="2 months"/>
+            <entry key="python" value="3 months"/>
+            <entry key="c" value="5 months "/>
+        </map>
+    </property>
+</bean><!--    <bean class=" com.spring.Student" name="student3" p:studentId></bean>-->

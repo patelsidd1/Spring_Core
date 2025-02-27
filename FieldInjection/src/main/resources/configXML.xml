@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="com.AutowireXML.Address" name="address1">
+        <property name="city" value="Noida"/>
+        <property name="state" value="Uttar Pradesh"/>
+        <property name="pincode" value="123654"/>
+        
+
+    </bean>
+<!--     we can use byType or byName or constructor on autowire part -->
+    <bean class="com.AutowireXML.Employee" name="emp" autowire="byType">
+        <property name="name" value="Ashish"/>
+    </bean>
+</beans>

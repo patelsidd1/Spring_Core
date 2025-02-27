@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="student" class="com.Student.StudentDetails">
+    <constructor-arg name="rollno"  value="1245"/>
+    <constructor-arg name="name" value="Ankit"/>
+    <constructor-arg name="university" value="IPS"/>
+    <constructor-arg name="address" value="Indore"/>
+    <constructor-arg name="mobile" value="6392986560"/>
+
+
+
+</bean>
+
+
+</beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean id="emp" class="com.CompanyData.Employee">-->
+<!--        <constructor-arg name="name" value="Ravi"/>-->
+<!--        <constructor-arg name="id" value="214"/>-->
+<!--        <constructor-arg name="department" value="Java"/>-->
+<!--        <constructor-arg name="city" value="Noida"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="com" class="com.CompanyData.Company">-->
+<!--        <constructor-arg name="com_name" value="BlueThink"/>-->
+<!--        <constructor-arg >-->
+<!--            <ref bean="emp"/>-->
+<!--        </constructor-arg>-->
+
+<!--        <constructor-arg name="team" value="Java Developement"/>-->
+
+
+<!--    </bean>-->
+    <bean  class="com.Autowire.Company" name="auto">
+
+
+    </bean>
+    <bean class="com.Autowire.Employee" name="emp1" autowire="byName">
+
+
+    </bean>
+</beans>
